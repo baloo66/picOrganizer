@@ -147,6 +147,7 @@ def handleFile(tgtPath, fname, moveFile):
             shutil.copyfile(srcFile, dstFile)
         else:
             print(f'moving {srcFile}\t->\t{dstFile}')
+            shutil.move(srcFile, dstFile)
     else:
         print("ERROR no timestamp for [" + fname + "]")
 
